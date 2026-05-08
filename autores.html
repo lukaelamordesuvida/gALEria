@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Autores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <h2>MENÚ</h2>
+
+    <a href="explorar.html">Explorar</a>
+    <a href="pinturas.html">Pinturas</a>
+    <a href="autores.html" class="active">Autores</a>
+    <a href="historia.html">Historia</a>
+    <a href="comunidad.html">Comunidad</a>
+  </aside>
+
+  <main class="content">
+
+    <div class="profile">
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg" class="profile-pic">
+
+      <h2>Vincent Van Gogh</h2>
+
+      <div class="stats">
+        <span>4.4M seguidores</span>
+        <span>1,100 pinturas</span>
+      </div>
+
+      <button class="follow-btn">Seguir</button>
+
+      <div class="tabs">
+        <div>Biografía</div>
+        <div>Obras</div>
+      </div>
+
+      <p class="bio">
+        Pintor neerlandés considerado uno de los artistas más influyentes del arte moderno.
+      </p>
+
+      <div class="gallery">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/The_Starry_Night.jpg">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Vincent_Willem_van_Gogh_128.jpg">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Vincent_Van_Gogh_-_Wheatfield_with_Crows.jpg">
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script>
+const btn = document.querySelector(".follow-btn");
+
+btn.addEventListener("click", () => {
+  if(btn.innerText === "Seguir"){
+    btn.innerText = "Dejar de seguir";
+  } else {
+    btn.innerText = "Seguir";
+  }
+});
+</script>
+
+</body>
+</html>
